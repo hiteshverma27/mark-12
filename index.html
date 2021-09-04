@@ -8,10 +8,15 @@
   </head>
   <body>
     <h1>Is triangle?</h1>
-    <label for="angle1"></label
-    ><input type="number" class="angle-input" /><label for="angle2"
-      ><input type="number" class="angle-input" /></label
-    ><label for="angle3"></label><input type="number" class="angle-input" />
+    <label for="angle1">Angle 1</label>
+    <input type="number" class="angle-input" min="0" oninput="validity.valid||(value='');"
+    placeholder="Enter Angle 1">
+    <label for="angle2">Angle 2</label>
+    <input type="number" class="angle-input" min="0" oninput="validity.valid||(value='');"
+    placeholder="Enter Angle 2">
+    <label for="angle3">Angle 3</label>
+    <input type="number" class="angle-input" min="0" oninput="validity.valid||(value='');"
+    placeholder="Enter Angle 3">
     <button class="is-triangle-btn">Is triangle?</button>
     <div id="output"></div>
     <script src="app.js"></script>
