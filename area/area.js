@@ -9,7 +9,7 @@ function calculateBaseXHeight(b,h){
 
 function calculateArea(){
     const basexheight = calculateBaseXHeight(Number(areaInputs[0].value), Number(areaInputs[1].value));
-    const area = 0.5*basexheight;
+    const area = 0.5*basexheight.toFixed(2);
     output.innerText = `The area of triangle for the given values of sides is ${area}`
 
 }
